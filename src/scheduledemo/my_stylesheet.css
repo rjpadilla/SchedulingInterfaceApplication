@@ -1,0 +1,50 @@
+
+.root {-fx-background-color: #121212;}
+
+.label{
+    -fx-font-family:"Arial";
+    -fx-font-size: 12px;
+    -fx-fontweight: bold;
+    -fx-text-fill: #ffffff;
+    
+}
+
+
+
+.button{
+    -fx-text-fill:white;
+    -fx-font-family:"Arial";
+    -fx-font-weight: bold;
+    -fx-background-color: #121212;
+    -fx-background-radius: 0;
+    
+}
+
+.button:hover{
+    -fx-text-fill:#ffffff;   
+    -fx-font-family:"Arial";
+    -fx-underline: true;
+    
+}
+
+
+.table-view .label{
+    -fx-font: "Arial";
+    -fx-text-fill: black;
+    -fx-text-alignment: center;
+}
+
+.radio-button{
+    -fx-font: "Arial";
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment:center;
+}
+
+.text-field{
+    -fx-background-radius: 0;
+}
+
+.choice-box .label{
+    -fx-text-fill: black;
+}
+

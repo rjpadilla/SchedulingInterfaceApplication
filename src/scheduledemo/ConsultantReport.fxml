@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="788.0" stylesheets="@my_stylesheet.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduledemo.ConsultantReportController">
+     <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="95.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="788.0">
+         <fill>
+            <LinearGradient endX="0.46190476190476193" endY="0.38571428571428573" startX="0.4619047619047619" startY="0.9761904761904762">
+               <stops>
+                  <Stop color="#121212" />
+                  <Stop color="#242424" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#060707" height="25.0" layoutY="1.0" onMouseDragged="#draggedWindowBar" onMousePressed="#pressCurrentCordinate" stroke="BLACK" strokeType="INSIDE" width="790.0" />
+      <Button layoutX="740.0" layoutY="1.0" mnemonicParsing="false" onAction="#changeMinimizeButtonPushed" prefHeight="0.0" prefWidth="9.0" style="-fx-background-color: black;" text="_" />
+      <Button layoutX="760.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#changeExitButtonPushed" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: black;" text="x" />
+      <Label layoutX="12.0" layoutY="7.0" onMouseDragged="#draggedWindowBar" onMousePressed="#pressCurrentCordinate" text="Scheduling Interface Application" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultant Schedule Report" wrappingWidth="634.9999924302101">
+         <font>
+            <Font name="Arial Bold" size="46.0" />
+         </font>
+      </Text>
+      <Line endX="400.0" layoutX="333.0" layoutY="107.0" startX="-280.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#121212" />
+                  <Stop color="WHITE" offset="0.5134099616858238" />
+                  <Stop color="#121212" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <AnchorPane layoutX="122.0" layoutY="171.0" prefHeight="293.0" prefWidth="563.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="291.0" layoutY="-13.0" strokeType="INSIDE" strokeWidth="1.5" width="553.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="0.4380952380952381" startY="1.0">
+                     <stops>
+                        <Stop color="#242424" />
+                        <Stop color="#f2f2f2" offset="0.3256704980842911" />
+                        <Stop color="#242424" offset="0.7049808429118769" />
+                        <Stop color="#f2f2f2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <TableView fx:id="appointmentTable" layoutX="21.0" layoutY="23.0" prefHeight="183.0" prefWidth="512.0">
+               <columns>
+                  <TableColumn fx:id="userColumn" prefWidth="52.0" text="User" />
+                  <TableColumn fx:id="titleColumn" prefWidth="77.0" text="Title" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="125.0" text="Description" />
+                  <TableColumn fx:id="locationColumn" minWidth="0.0" prefWidth="118.0" text="Location" />
+                  <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="139.0" text="Date" />
+               </columns>
+            </TableView>
+            <Button layoutX="246.0" layoutY="235.0" mnemonicParsing="false" onAction="#changeReportButtonPushed" text="GO BACK" />
+            
+            
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
