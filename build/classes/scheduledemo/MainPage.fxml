@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="788.0" stylesheets="@my_stylesheet.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduledemo.MainPageController">
+   <children>
+      <HBox layoutX="64.0" layoutY="107.0" prefHeight="64.0" prefWidth="660.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="139.0" text="Home" />
+            <Button mnemonicParsing="false" onAction="#changeCustomerButtonPushed" prefHeight="49.0" prefWidth="139.0" text="Customer" />
+            <Button mnemonicParsing="false" onAction="#changeAppointmentButtonPushed" prefHeight="49.0" prefWidth="139.0" text="Appointment" />
+            <Button mnemonicParsing="false" onAction="#changeCalendarButtonPushed" prefHeight="49.0" prefWidth="139.0" text="Calendar" />
+            <Button mnemonicParsing="false" onAction="#changeReportButtonPushed" prefHeight="49.0" prefWidth="139.0" text="Report" />
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="95.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="788.0">
+         <fill>
+            <LinearGradient endX="0.46190476190476193" endY="0.38571428571428573" startX="0.4619047619047619" startY="0.9761904761904762">
+               <stops>
+                  <Stop color="#121212" />
+                  <Stop color="#242424" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#060707" height="25.0" layoutY="1.0" onMouseDragged="#draggedWindowBar" onMousePressed="#pressCurrentCordinate" stroke="BLACK" strokeType="INSIDE" width="790.0" />
+      <Button layoutX="740.0" layoutY="1.0" mnemonicParsing="false" onAction="#changeMinimizeButtonPushed" prefHeight="0.0" prefWidth="9.0" style="-fx-background-color: black;" text="_" />
+      <Button layoutX="760.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#changeExitButtonPushed" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: black;" text="x" />
+      <Label layoutX="12.0" layoutY="7.0" onMouseDragged="#draggedWindowBar" onMousePressed="#pressCurrentCordinate" text="Scheduling Interface Application" />
+      <Text fill="WHITE" layoutX="32.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" wrappingWidth="131.9999924302101">
+         <font>
+            <Font name="Arial Bold" size="46.0" />
+         </font>
+      </Text>
+      <Line endX="400.0" layoutX="333.0" layoutY="107.0" startX="-280.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#121212" />
+                  <Stop color="WHITE" offset="0.5134099616858238" />
+                  <Stop color="#121212" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Label layoutX="98.0" layoutY="191.0" text="To add, update, or delete a customer, click on the Customer tab.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="275.0" text="To view appointments by months or weeks, click on the Calendar tab.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="233.0" text="To add, update, or delete an appointment, click on the Appointment tab.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="318.0" text="To view reports on the appointments or customers, click on the Report tab.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
