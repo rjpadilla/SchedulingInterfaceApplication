@@ -1,1 +1,2 @@
 # SchedulingInterfaceApplication
+The Scheduling Interface Application will help your organization conduct it's business by creating a system in which you can add, update, delete, and query customer's data. This application is built with JavaFX and uses a MySQL database.
