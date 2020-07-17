@@ -20,7 +20,7 @@ The application has the ability to add, delete, and update customer and appointm
 # Calendar Screen
 A calendar is provided to help the user see which appointments are assigned in a year or by the current month.
 
-![Calendar screen](raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/calendarscreen.jpg"Calendar screen")
+![Calendar screen](raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/calendarscreen.jpg "Calendar screen")
 
 # Report Screen
 The application can generate each of the following reports
@@ -29,9 +29,9 @@ The application can generate each of the following reports
 *The schedule for each user
 *A detailed report of a customer
 
-![Report screen](raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/reportscreen.jpg"Report screen")
+![Report screen](raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/reportscreen.jpg "Report screen")
 
-![Number screen](raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/numberscreen.jpg"Number screen")
+![Number screen](raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/numberscreen.jpg "Number screen")
 
 ## Technologies used
 * Java
