@@ -12,7 +12,7 @@ The application also supports error-messages with mulitiple languages capabiliti
 
 # Interface Screen
 The application has the ability to add, delete, and update customer and appointment data using the MySQL database.
-![Interface screen](https://raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/customerscreen.jpgg "Interface screen")
+![Interface screen](https://raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/customerscreen.jpg "Interface screen")
 
 ![Update screen](https://raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/updatescreen.jpg "Update screen")
 
