@@ -25,9 +25,9 @@ A calendar is provided to help the user see which appointments are assigned in a
 # Report Screen
 The application can generate each of the following reports
 
-*Number of appointment types by month
-*The schedule for each user
-*A detailed report of a customer
+* Number of appointment types by month
+* The schedule for each user
+* A detailed report of a customer
 
 ![Report screen](https://raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/reportscreen.jpg "Report screen")
 
