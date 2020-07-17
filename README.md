@@ -3,5 +3,7 @@ The Scheduling Interface Application will help your organization conduct it's bu
 
 # Login Screen
 The application displays a login page the first time the user starts up the program. The login screen will ask for a username and password that is save in the MySQL database.
+![Login screen](
+    https://raw.githubusercontent.com/rjpadilla/SchedulingInterfaceApplication/master/screenshots/login.jpg "Login screen")
 
-The application also supports mulitiple languages.(Locale must be added first*)
+The application also supports error-messages with mulitiple languages capabilities.(Locale must be added first*)
